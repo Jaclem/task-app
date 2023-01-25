@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState } from "react";
+import Overview from "./components/Overview";
 
 function App() {
   const [text, setText] = useState("");
@@ -19,8 +20,7 @@ function App() {
       <input type="text" onChange={handleChange} value={text}></input>
       <button onClick={handleClick}>Submit</button>
 
-      <h1>{text}</h1>
-      <h1>{input}</h1>
+      <Overview input={input} />
     </>
   );
 }

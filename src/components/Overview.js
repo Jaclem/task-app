@@ -1,10 +1,5 @@
-
-function Overview() {
-  return (
-    <div>
-
-    </div>
-  );
+function Overview(props) {
+  return <></>;
 }
 
 export default Overview;
